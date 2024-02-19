@@ -6,7 +6,7 @@ import streamlit as st
 st.title('Quantum Mechanics')
 st.header('1-D Potential Well',divider='rainbow')
 
-a=st.number_input('enter the length of well')
+a=5
 x=np.linspace(-a,a,10000)
 
 def psi(x, n):
