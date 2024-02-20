@@ -12,7 +12,7 @@ def psi(x, n):
     y = np.sqrt(2 / a) * np.sin((n * np.pi * x) / (a))
     return y
 
-n=st.number_input('Enter the state')
+n=st.number_input('Enter the state',min_value=1)
 st.text(n)
 
 plt.plot(x,(psi(x,n))**2,'--',label=rf'$\psi_{n}$')
