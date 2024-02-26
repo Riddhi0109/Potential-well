@@ -11,6 +11,7 @@ st.caption("The potential energy is 0 inside the box (V=0 for 0<x<L) and goes to
 a=st.slider('Enter the Length of well',1,20)
 x=np.linspace(-a,a,10000)
 n=st.slider('Enter the state',1,100)
+
 def psi(x, n):
     y = np.sqrt(2 / a) * np.sin((n * np.pi * x) / (a))
     return y
@@ -21,6 +22,7 @@ def psi1(x, n):
     
 def psi2(x,n):
     y2=np.sqrt(2 / a) * np.cos((n * np.pi * x) / (a))
+    return y2
     
 options = st.radio('choose type of well',["Asymmetric Potential Well","Symmetric Potential Well","Potential well with length 2a","Both",])
 if options=='Asymmetric Potential Well':
