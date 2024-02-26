@@ -55,7 +55,7 @@ if options=='Symmetric Potential Well':
     plt.savefig('graph1.jpg')
     st.image('graph1.jpg')
 
-if options=Potential well with length 2a''
+if options=Potential well with length 2a':
     plt.subplot(2,1,1)
     plt.plot(x,(psi(x,n)))
     plt.xlim(0,a)
