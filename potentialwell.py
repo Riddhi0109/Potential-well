@@ -25,7 +25,7 @@ def psi2(x,n):
     y2=np.sqrt(2 / a) * np.cos((n * np.pi * x) / (a))
     return y2
     
-options = st.radio('choose type of well',["Asymmetric Potential Well","Symmetric Potential Well","Potential well with length 2a","Both",])
+options = st.radio('choose type of well',["Asymmetric Potential Well","Symmetric Potential Well","Potential well with length 2a","All",])
 
 if options=='Asymmetric Potential Well':
     plt.subplot(2,1,1)
@@ -73,7 +73,7 @@ if options=='Symmetric Potential Well':
     plt.savefig('graph1.jpg')
     st.image('graph1.jpg')
     
-if options=='Both':
+if options=='All':
     
     plt.subplot(2,1,1)
     plt.plot(x,(psi(x,n)))
