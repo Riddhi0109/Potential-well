@@ -5,12 +5,12 @@ import streamlit as st
 st.title('Quantum Mechanics')
 st.header('1-D Potential Well',divider='rainbow')
 
-st.text("In this site we are going to see the graphical representation of 1d pot well")
+st.text("A particle in a 1-dimensional box is a fundamental quantum mechanical approximation describing the translational motion of a single particle confined inside an infinitely deep well from which it cannot escape.")
+st.text("The potential energy is 0 inside the box (V=0 for 0<x<L) and goes to infinity at the walls of the box (V=∞ for x<0 or x>L).")
 
 a=st.slider('Enter the Length of well',1,20)
 x=np.linspace(-a,a,10000)
 n=st.slider('Enter the state',1,100)
-
 def psi(x, n):
     y = np.sqrt(2 / a) * np.sin((n * np.pi * x) / (a))
     return y
