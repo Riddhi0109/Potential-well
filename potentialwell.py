@@ -113,7 +113,7 @@ if options=='All':
     plt.plot(x,(psi2(x,n))**2)
     plt.ylabel('$\psi1(x)^2$')
     plt.xlabel('x')
-    plt.xlim(-a,a)
+    plt.xlim(-a*0.5,a*0.5)
     plt.axvline(0,color='black')
     plt.ylim(bottom=0)
     plt.savefig('graph1.jpg')
